@@ -1,14 +1,13 @@
+package org.example;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 import java.util.Scanner;
 
-public class Search {
+public class Main {
 
     // Function to generate random numbers
-    //This is test comment to be removed
     public static List<Integer> generateRandomNumbers(int start, int end, int count) {
         List<Integer> numbers = new ArrayList<>();
         for (int i = start; i <= end; i++) {
@@ -21,7 +20,8 @@ public class Search {
     public static void main(String[] args) {
         int startNumber = 1;
         int endNumber = 1000;
-        int count = 100;
+        int count =     100;
+
 
         List<Integer> randomNumbers = generateRandomNumbers(startNumber, endNumber, count);
         Collections.sort(randomNumbers); // Sort the numbers
